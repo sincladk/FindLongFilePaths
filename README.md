@@ -3,7 +3,7 @@ This tiny console application finds any path that is longer than a specific leng
 
 ## Usage
 
-`FindLongFilePaths.exe \[<file-path>\] \[<max-file-path-length>\]`
+`FindLongFilePaths.exe [<file-path>] [<max-file-path-length>]`
 
 ## Configuration Options
 
@@ -11,3 +11,8 @@ This tiny console application finds any path that is longer than a specific leng
   * Can be passed-in on the command line (first argument)
 * `MaxFilePathLength` (default: 200)
   * Can be passed-in on the command line (second argument) or provided in the `app.config` file
+  
+## Examples
+
+### Find file paths in the `C:\git\repo\Custom.Content.Project` folder that are 260 characters or longer
+`FindLongFilePaths.exe "C:\git\repo\Custom.Content.Project" 260`
